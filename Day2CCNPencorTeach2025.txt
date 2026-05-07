@@ -1910,6 +1910,8 @@ but try to ping 1.1.1.1
 
 MAKE AREA 34 A TOTALLY STUBBY AREA:
 
+STUBBY AREA = SOBRANG DULO/ DULONG DULO
+
 R3: totally stubby.
 config t
  router ospf 1
@@ -1931,6 +1933,7 @@ O        3.3.3.3 [110/11] via 10.1.1.9, 00:00:00, Ethernet1/2
 in a Totally Stubby area, No OIA, OE2 only O*IA and O
 
 BUT THEN YOU REALIZE THAT AREA 34 AND R4 HAS EIGRP ON IT! OH SYET!!
+NSSA - Not so stubby area "not so dulo area"
 
 r3:
 !Cisco Proprietary
@@ -1998,7 +2001,7 @@ O        3.3.3.3 [110/11] via 10.1.1.9, 00:01:44, Ethernet1/2
 O IA     10.1.1.0/30 [110/30] via 10.1.1.9, 00:01:34, Ethernet1/2
 O IA     10.1.1.4/30 [110/20] via 10.1.1.9, 00:01:34, Ethernet1/2
 
-ON all ABRs, we do:
+ON all ABRs, we do: TOTALLT NOT SO STUBBY AREA / DULONG DULO PERO HINDI PA PALA
 R3:
 config t
  router ospf 1
