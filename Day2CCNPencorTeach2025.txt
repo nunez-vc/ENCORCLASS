@@ -1877,7 +1877,9 @@ O IA     10.1.1.4/30 [110/20] via 10.1.1.9, 00:00:32, Ethernet1/2
       11.0.0.0/32 is subnetted, 1 subnets
 O E1     11.11.11.11 [110/50] via 10.1.1.9, 00:00:22, Ethernet1/2
 
-MAKE AREA 34 A STUB AREA:
+MAKE AREA 34 A STUB AREA: "nasa DULO"
+
+STUB = DULO
  
 R3:
 config t
