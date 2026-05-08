@@ -262,7 +262,7 @@ ExamLab1: Create a default netflow exporter using Defualt collection:
 APPS1: 
 config t
 flow exporter MyFlowExporter
- destination 208.8.8.1
+ destination 192.168.103.1
  transport udp 2055
  export-protocol netflow-v9
 end
