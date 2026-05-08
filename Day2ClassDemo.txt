@@ -284,7 +284,7 @@ show flow record CCNPENCOR-CUSTOM-OUT
 STEPtwo: CReate Flow Exporter:
 config t
 	flow exporter CCNP8-COLLECTOR-HOST 
-        destination 208.8.8.1
+        destination 192.168.103.1
 	export-protocol netflow-v9 
         transport UDP 2055
 	end
@@ -307,7 +307,7 @@ show flow monitor
 
 Step 4. Configure the appropriate interface:
 config t
-	interface gigabit 1
+	interface gigabit 3
 	ip flow monitor CCNP8-INBOUND-MONITOR input 
 	ip flow monitor CCNP8-OUTBOUND-MONITOR output 
 
