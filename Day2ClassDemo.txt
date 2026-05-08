@@ -398,11 +398,13 @@ END
 
 telco2: Backup:
 config t
+track 3 int gi 1 line-protocol
 Int gi 2
 standby version 2
 standby 2 ip 192.168.102.7
 standby 2 preempt
 standby 2 Priority 100
+standby 2 track 2 decrement 50
 END
 
 telco3: BackupOfBackup:
